@@ -5,18 +5,19 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/soccer_img"
+    android:background="@drawable/soccer_img2"
     android:backgroundTintMode="add"
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textTitle"
         android:layout_width="307dp"
         android:layout_height="83dp"
         android:layout_marginTop="24dp"
-        android:fontFamily="casual"
+        android:fontFamily="monospace"
         android:text="Top South African Teams"
         android:textAlignment="center"
-        android:textColor="#FF5722"
+        android:textColor="#FFEB3B"
         android:textColorHighlight="#FFEB3B"
         android:textColorHint="#FFEB3B"
         android:textSize="26sp"
@@ -27,5 +28,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.319" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Teams"
+        android:textColor="#FFC107"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="176dp"
+        tools:layout_editor_absoluteY="345dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
