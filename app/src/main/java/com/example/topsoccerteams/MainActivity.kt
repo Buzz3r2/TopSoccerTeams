@@ -26,11 +26,17 @@ class MainActivity : AppCompatActivity() {
 
         //assigning array content to a variable
         var teamDisplay = ""
-        teamDisplay += "${teams[0]}\n"
-        teamDisplay += "${teams[1]}\n"
-        teamDisplay += "${teams[2]}\n"
-        teamDisplay += "${teams[3]}\n"
-        teamDisplay += "${teams[4]}\n"
+        var count = 0
+
+        while (count <5){
+            teamDisplay += "${teams[count]}\n"
+            count++
+        }
+//        teamDisplay += "${teams[0]}\n"
+//        teamDisplay += "${teams[1]}\n"
+//        teamDisplay += "${teams[2]}\n"
+//        teamDisplay += "${teams[3]}\n"
+//        teamDisplay += "${teams[4]}\n"
 
         //displaying array content in the textview
         teamsTxt.text = teamDisplay
