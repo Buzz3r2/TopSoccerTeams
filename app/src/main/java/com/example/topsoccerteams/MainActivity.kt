@@ -8,8 +8,9 @@ import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity() {
 
+    // array of soccer teams
     val teams = arrayOf<String>("Mamelodi Sundowns FC", "Orlando Pirates",
-        "Bidvest Wits", "Stellenbosch"
+        "Bidvest Wits", "Stellenbosch FC", "Sek United FC")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
