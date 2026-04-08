@@ -17,8 +17,11 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
+        //creating variable to hold textview text
         val teamsTxt = findViewById<TextView>(R.id.teamsTextView)
 
+        //displaying array item in textview
+        teams[0] = "Man Sundowns FC :)"
         teamsTxt.text = teams[0]
 
 
