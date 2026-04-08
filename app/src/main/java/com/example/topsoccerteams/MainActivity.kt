@@ -6,6 +6,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import java.util.Arrays
 
 class MainActivity : AppCompatActivity() {
 
@@ -20,9 +21,19 @@ class MainActivity : AppCompatActivity() {
         //creating variable to hold textview text
         val teamsTxt = findViewById<TextView>(R.id.teamsTextView)
 
-        //displaying array item in textview
+        //reassigned position 0 of teams array to a new value
         teams[0] = "Man Sundowns FC :)"
-        teamsTxt.text = teams[0]
+
+        //assigning array content to a variable
+        var teamDisplay = ""
+        teamDisplay += "${teams[0]}\n"
+        teamDisplay += "${teams[1]}\n"
+        teamDisplay += "${teams[2]}\n"
+        teamDisplay += "${teams[3]}\n"
+        teamDisplay += "${teams[4]}\n"
+
+        //displaying array content in the textview
+        teamsTxt.text = teamDisplay
 
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
